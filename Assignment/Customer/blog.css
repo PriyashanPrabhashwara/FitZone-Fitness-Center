@@ -1,0 +1,139 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, sans-serif;
+    
+    }
+    
+    :root {
+    
+    --bg-color: #252424;
+    --snd-bg-color: #111;
+    --text-color:#fff;
+    --main-color: #45ffca;
+    
+    }
+    
+.body{
+    background-color:var(--snd-bg-color);
+    color: var(--text-color);
+}
+
+
+.heading{
+    color:var(--main-color);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.abt-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+.abt-content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color:var(--main-color);
+}
+.abt-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+}
+
+.home-icon {
+    font-size: 40px;
+    color: #8313df; /* Orange */
+    margin-left:300px;
+    position: absolute;
+    top:44px;
+    left:30px;
+    margin-top: 30px;
+}
+
+.abte-image{
+    
+    flex: 1;
+    width: 600px;
+    margin:auto;
+    animation: fadeInRight 2s ease;
+}
+img{
+    
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 35px;
+    }
+    .abt{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .abt-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .abt-content h2{
+        font-size: 30px;
+    }
+    .abt-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .abt-content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .abte-image{
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+

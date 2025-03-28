@@ -1,0 +1,53 @@
+.contact{
+    width: 100%;
+    margin-top: 30px;
+    background:linear-gradient(rgb(60,60,60),rgb(0,0,0),rgb(50,50,50));
+    padding: 30px;
+}
+
+
+
+:root {
+
+    --bg-color: #000;
+    --snd-bg-color: #111;
+    --text-color:#fff;
+    --main-color: #45ffca;
+    
+    }
+
+
+.contact label {
+    font-size: 14px;
+    color:var(--main-color);
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700;
+}
+
+.contact input, 
+.contact textarea {
+    width: 35%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:var(--snd-bg-color,);
+    border: 3px solid black ;
+    border-radius: 5px;
+    font-size: 16px;
+    color:white;
+}
+
+.contact button {
+    background-color:var(--bg-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color:var(--snd-bg-color);
+    transition: 0.7s ease;
+}
